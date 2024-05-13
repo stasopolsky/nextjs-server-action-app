@@ -20,7 +20,10 @@ export default function CheckBox({ todo }: CheckBoxProps) {
         startTransition(() =>
           updateTodoAction(
             todo.id,
-            { completed: !todo.completed },
+            {
+              //  title: "loh",
+              completed: !todo.completed,
+            },
             "/with-server-actions"
           )
         )

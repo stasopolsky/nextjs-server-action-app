@@ -55,6 +55,7 @@ export async function updateTodo(
   { title, completed }: { title?: string; completed?: boolean }
 ) {
   try {
+    // throw new Error("Hey just testing");
     const todo = await prisma.todo.update({
       where: { id },
       data: {

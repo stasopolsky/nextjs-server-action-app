@@ -61,7 +61,7 @@ export async function createTodoActionWithValidation({
 
 export async function updateTodoAction(
   id: string,
-  update: { tilte?: string; completed?: boolean },
+  update: { title?: string; completed?: boolean },
   path: string
 ) {
   await updateTodo(id, update);
