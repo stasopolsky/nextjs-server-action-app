@@ -8,6 +8,7 @@ type ValidationError = Record<string, { _errors: string[] }>;
 export default function TodoForm() {
   const [validationError, setValidationError] =
     useState<ValidationError | null>(null);
+
   const formRef = useRef<HTMLFormElement>(null);
 
   async function action(data: FormData) {

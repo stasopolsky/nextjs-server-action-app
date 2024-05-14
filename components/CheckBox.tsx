@@ -10,7 +10,7 @@ type CheckBoxProps = {
 
 export default function CheckBox({ todo }: CheckBoxProps) {
   const [isPending, startTransition] = useTransition();
-
+  console.log("sfd");
   return (
     <input
       type="checkbox"
